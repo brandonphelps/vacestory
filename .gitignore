@@ -30,7 +30,10 @@
 /.cproject
 /.gitignore
 /.project
+
 #.gitignore
 /Debug/
 /.DS_Store
 /content
+
+/build
