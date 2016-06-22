@@ -16,7 +16,9 @@ AnimatedSprite::AnimatedSprite(Graphics &graphics, const std::string &filePath, 
 				_visible(true),
 				_currentAnimationOnce(false),
 				_currentAnimation("")
-{}
+{
+  graphics.loadImage(filePath);
+}
 
 void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset) {
 	std::vector<SDL_Rect> rectangles;
